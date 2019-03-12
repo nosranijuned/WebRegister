@@ -1,0 +1,14 @@
+
+public class Employee {
+
+	int id;
+	String name;
+	String address;
+	
+	public Employee(int id, String name, String address) {
+		// TODO Auto-generated constructor stub
+		this.id = id;
+		this.name = name;
+		this.address = address;
+	}
+}

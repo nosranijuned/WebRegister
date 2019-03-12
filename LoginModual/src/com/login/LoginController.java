@@ -1,0 +1,37 @@
+package com.login;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.GenericServlet;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+
+public class LoginController extends GenericServlet {
+
+	@Override
+	public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		res.setContentType("text/html");
+		
+		String username = req.getParameter("uname");
+		String pass = req.getParameter("pass");
+		System.out.println("User Name : "+username);
+		System.out.println("Password : "+pass);
+		PrintWriter pw = res.getWriter();
+		
+		if(pass.equals("admin")) {
+			pw.print("<html><body><h1>"
+					+ "Welcome "+username
+					+ "</h1><a href='WelcomePage.html'>Back</a>"
+					+ "</body></html>");		
+		}else {
+			pw.print("<html><body></h1>"
+					+ "Username & Password is invalid."
+					+ "</h1></body></html>");
+		}
+	}
+
+
+}

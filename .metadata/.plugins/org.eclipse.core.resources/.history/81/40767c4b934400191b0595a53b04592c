@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="" method="post">
+	<fieldset>
+  		<legend>Reset Password Form</legend>
+		<table>
+			<tr><td>Password</td><td><input type="text" name="pass"></td></tr>
+			<tr><td>Confirm Password</td><td><input type="text" name="cpass"></td></tr>
+			<tr><td></td><td><input type="submit" value="Submit"></td></tr>
+		</table>
+	</fieldset>
+</form>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<script type="text/javascript">
+function GEEKFORGEEKS()                                    
+{ 
+    var fname = document.forms["RegForm"]["fname"];               
+    var mname = document.forms["RegForm"]["mname"];    
+    var lname = document.forms["RegForm"]["lname"];  
+    var location =  document.forms["RegForm"]["loc"];  
+    var mobile = document.forms["RegForm"]["mob"];  
+   
+    if (fname.value == "")                                  
+    { 
+        window.alert("Please enter your first name."); 
+        fname.focus(); 
+        return false; 
+    } 
+   
+    if (mname.value == "")                               
+    { 
+        window.alert("Please enter your middle name."); 
+        mname.focus(); 
+        return false; 
+    } 
+       
+    if (fname.value == "")                                   
+    { 
+        window.alert("Please enter your last name."); 
+        fname.focus(); 
+        return false; 
+    } 
+   
+     if (location.value == "")                           
+    { 
+        window.alert("Please enter your location."); 
+        location.focus(); 
+        return false; 
+    } 
+   
+    if (mobile.value == "")                        
+    { 
+        window.alert("Please enter your mobile no"); 
+        mobile.focus(); 
+        return flase; 
+    } 
+   return true; 
+} 
+</script>
+</head>
+<body>
+	<form action="" onsubmit="return GEEKFORGEEKS()" method="post">
+		First Name<input type="text" name="fname">
+		Middel Name<input type="text" name="mname">
+		Last Name<input type="text" name="lname">
+		Location<input type="text" name="loc">
+		Mobile No<input type="text" name="mob">
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>

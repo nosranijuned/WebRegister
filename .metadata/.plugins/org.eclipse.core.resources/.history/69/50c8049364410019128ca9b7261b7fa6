@@ -1,0 +1,33 @@
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.GenericServlet;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+
+@()
+public class DetailForm extends GenericServlet {
+
+	@Override
+	public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		res.setContentType("text/html");
+		String fname = req.getParameter("fname");
+		String lname = req.getParameter("lname");
+		PrintWriter pw  = res.getWriter();
+		if(fname == "juned") {
+			pw.print("<html><body><h1>"
+					+ "Welcome "+fname
+					+ "<br><a href = 'index.html'>Back</a>"
+					+ "</h1></body></html>");
+		}else {
+			pw.print("<html><body><h1>"
+					+ "Wrong Input."
+					+ "<br><a href = 'index.html'>Back</a>"
+					+ "</h1></body></html>");
+		}
+		
+	}
+
+}

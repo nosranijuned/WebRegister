@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Welcome Page</title>
+</head>
+<body bgcolor="Black">
+	<frameset rows="25%,75%">
+		<frame src="Header.html">
+		<frameset cols ="25%,75%">
+			<frame src="SideBar.html">
+			<frame src="Main.html">
+		</frameset>
+	</frameset>
+</body>
+</html>

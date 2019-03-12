@@ -1,0 +1,12 @@
+import java.util.TreeSet;
+
+public class EmployeeTreeSet {
+
+	public static void main(String[] args) {
+		
+		TreeSet<Employee> ts = new TreeSet<Employee>();
+		
+		
+	}
+
+}

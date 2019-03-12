@@ -1,0 +1,27 @@
+
+public class Employee {
+
+	int id;
+	String name;
+	String address;
+	
+	public Employee(int id, String name, String address) {
+		// TODO Auto-generated constructor stub
+		this.id = id;
+		this.name = name;
+		this.address = address;
+	}
+	
+	public int hashCode(){
+        System.out.println("In hashcode");
+        int hashcode = 0;
+        return hashcode;
+    }
+	
+	public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Employee emp = (Employee) o;
+        return id == emp.id;
+    }
+}

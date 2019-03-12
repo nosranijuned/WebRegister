@@ -1,0 +1,26 @@
+import java.util.TreeSet;
+
+public class EmployeeTreeSet {
+
+	public static void main(String[] args) {
+		
+		TreeSet<Employee> ts = new Set<Employee>();
+		
+		Employee e1 = new Employee(101, "emp1", "Jaipur");
+		Employee e2 = new Employee(102, "emp2", "Bangaluru");
+		Employee e3 = new Employee(103, "emp3", "Mumbai");
+		Employee e4 = new Employee(104, "emp4", "China");
+		Employee e5 = new Employee(104, "emp4", "China");
+		
+		ts.add(e1);
+		ts.add(e2);
+		ts.add(e3);
+		ts.add(e4);
+		ts.add(e5);
+		
+		for(Employee e : ts) {
+			System.out.println(e.id+" "+e.name+" "+e.address);
+		}
+	}
+
+}

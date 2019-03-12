@@ -1,0 +1,27 @@
+import java.util.HashSet;
+
+public class EmployeeSetTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		HashSet<Employee> set = new HashSet<Employee>();
+		
+		Employee e1 = new Employee(101, "emp1", "Jaipur");
+		Employee e2 = new Employee(102, "emp2", "Bangaluru");
+		Employee e3 = new Employee(103, "emp3", "Mumbai");
+		Employee e4 = new Employee(104, "emp4", "China");
+		Employee e5 = new Employee(101, "emp1", "Jaipur");
+		
+		set.add(e1);
+		set.add(e2);
+		set.add(e3);
+		set.add(e4);
+		set.add(e5);
+		
+		for(Employee e : set) {
+			System.out.println(e.id+" "+e.name+" "+e.address);
+		}
+	}
+
+}

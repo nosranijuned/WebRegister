@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="" method="post">
+	<fieldset>
+  		<legend>Edit Profile</legend>
+		<table>
+			<tr><td>Name</td><td><input type="text" name="name"></td></tr>
+			<tr><td>User Name</td><td><input type="text" name="uname"></td></tr>
+			<tr><td>Email Id</td><td><input type="email" name="email"></td></tr>
+			<tr><td>Password</td><td><input type="password" name="pass"></td></tr>
+			<tr><td></td><td><a href="ForgotPassword.html">Forgot Password</a></td></tr>
+			<tr><td></td><td><input type="submit" value="Submit"></td></tr>
+		</table>
+	</fieldset>
+</form>
+</body>
+</html>

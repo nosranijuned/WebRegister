@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function GEEKFORGEEKS()                                    
+{ 
+    var fname = document.forms["RegForm"]["fname"];               
+    var mname = document.forms["RegForm"]["mname"];    
+    var lname = document.forms["RegForm"]["lname"];  
+    var location =  document.forms["RegForm"]["loc"];  
+    var mobile = document.forms["RegForm"]["mob"];  
+    
+    var nregx = /^[a-zA-Z ]+$/;
+   
+    if (fname.value == "" && nregx.test(fname.value))                                  
+    { 
+        window.alert("Please enter your first name."); 
+        fname.focus(); 
+        return false; 
+    } 
+   
+    if (mname.value == "")                               
+    { 
+        window.alert("Please enter your middle name."); 
+        mname.focus(); 
+        return false; 
+    } 
+       
+    if (fname.value == "")                                   
+    { 
+        window.alert("Please enter your last name."); 
+        fname.focus(); 
+        return false; 
+    } 
+   
+     if (location.value == "")                           
+    { 
+        window.alert("Please enter your location."); 
+        location.focus(); 
+        return false; 
+    } 
+   
+    if (mobile.value == "")                        
+    { 
+        window.alert("Please enter your mobile no"); 
+        mobile.focus(); 
+        return flase; 
+    } 
+   return true; 
+} 
+</script>
+</head>
+<body>
+	<form action="" onsubmit="return GEEKFORGEEKS()" method="post">
+		<table>
+			<tr><td><b>First Name</b></td><td><input type="text" name="fname"></td></tr>
+			<tr><td><b>Middel Name</b></td><td><input type="text" name="mname"></td></tr>
+			<tr><td><b>Last Name</b></td><td><input type="text" name="lname"></td></tr>
+			<tr><td><b>Location</b></td><td><input type="text" name="loc"></td></tr>
+			<tr><td><b>Mobile No</b></td><td><input type="text" name="mob"></td></tr>
+			<tr><td><input type="submit" value="Submit"></td></tr>
+		</table>
+	</form>
+</body>
+</html>
